@@ -1,6 +1,6 @@
 {
 	"name" : "sdReadWrite",
-	"description" : "A node.js script to write/read files from the arduino sdcard",
+	"description" : "A node.js script to write/read files from the arduino sdcard through the serial port.",
 	"version" : "0.0.1",
 	"dependencies" : {
 		"optimist" : "0.3.5",
