@@ -6,7 +6,6 @@
 char path[255];
 byte path_index = 0;
 bool connected = 0;
-bool first_contact = 0;
 byte mode = 0;
 File file;
 long size;
@@ -80,7 +79,7 @@ void loop(void) {
 		} else {
 			file.close();
 			for(int x=0; x<512; x++) path[x] = NULL;
-			connected = false;
+			connected = path_index = 0;
 			Serial.write(1);
 		}
 	}

@@ -4,7 +4,7 @@ var argv = require('optimist')
 	.usage('Usage: $0 W|R filename [-p path] [--serial serialPort]')
     .default('p', '/')
     //.default('serial', '/dev/tty.usbserial-AH01KY16')
-    .default('serial', '/dev/tty.usbmodem621')
+    .default('serial', '/dev/cu.usbmodem621')
     .check(function(argv) {
     	argv._[0] = (argv._[0] + '').toUpperCase();
     	if(['W', 'R'].indexOf(argv._[0]) === -1) throw new Error('Mode should be W or R');
